@@ -50,6 +50,36 @@ const Navbar = () => {
           )}
         </button>
       </div>
+      {mobileMenuOpen && (
+        <div className="md:hidden ">
+          <div className="space-y-1 px-2 pb-3 pt-2">
+            <a
+              href="#about"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+            >
+              About
+            </a>
+            <a
+              href="#project"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+            >
+              Projects
+            </a>
+            <a
+              href="#testi"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+            >
+              Testimonial
+            </a>
+            <a
+              href="#contact"
+              className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
